@@ -1,8 +1,8 @@
 <template>
 <svg
-   width="10%"
-   height="10%"
-   viewBox="0 0 10% 10%"
+   width="13.960472mm"
+   height="24.75325775mm"
+   viewBox="0 0 13.960472mm 24.75325775mm"
    version="1.1"
    id="svg156637"
    sodipodi:docname="20240309 vapensköld 5 ny version.svg"
