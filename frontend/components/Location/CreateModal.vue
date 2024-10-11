@@ -7,18 +7,21 @@
         v-model="form.name"
         :trigger-focus="focused"
         :autofocus="true"
+        :required="true"
         label="Location Name"
+        :max-length="255"
+        :min-length="1"
       />
-      <FormTextArea v-model="form.description" label="Location Description" />
+      <FormTextArea v-model="form.description" label="Location Description" :max-length="1000" />
       <LocationSelector v-model="form.parent" />
       <div class="modal-action">
         <div class="flex justify-center">
           <BaseButton class="rounded-r-none" type="submit" :loading="loading">{{ $t("global.create") }}</BaseButton>
           <div class="dropdown dropdown-top">
             <label tabindex="0" class="btn rounded-l-none rounded-r-xl">
-              <MdiChevronDown class="h-5 w-5" />
+              <MdiChevronDown class="size-5" />
             </label>
-            <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-64 right-0">
+            <ul tabindex="0" class="dropdown-content menu rounded-box bg-base-100 right-0 w-64 p-2 shadow">
               <li>
                 <button type="button" @click="create(false)">{{ $t("global.create_and_add") }}</button>
               </li>
@@ -27,7 +30,7 @@
         </div>
       </div>
     </form>
-    <p class="text-sm text-center mt-4">
+    <p class="mt-4 text-center text-sm">
       use <kbd class="kbd kbd-xs">Shift</kbd> + <kbd class="kbd kbd-xs"> Enter </kbd> to create and add another
     </p>
   </BaseModal>
@@ -73,6 +76,10 @@
   const { shift } = useMagicKeys();
 
   async function create(close = true) {
+    if (loading.value) {
+      toast.error("Already creating a location");
+      return;
+    }
     loading.value = true;
 
     if (shift.value) {

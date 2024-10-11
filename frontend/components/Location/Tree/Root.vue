@@ -10,7 +10,10 @@
 </script>
 
 <template>
-  <div class="p-4 border-2 root">
+  <div class="root border-2 p-4">
+    <p v-if="locs.length === 0" class="text-center text-sm">
+      {{ $t("location.tree.no_locations") }}
+    </p>
     <LocationTreeNode v-for="item in locs" :key="item.id" :item="item" :tree-id="treeId" />
   </div>
 </template>

@@ -11,7 +11,15 @@
         "submit": "Gönder",
         "confirm": "Onaylayın",
         "build": "Sürüm: { build }",
-        "create_and_add": "Oluştur ve Bir Tane Daha Ekle"
+        "create_and_add": "Oluştur ve Bir Tane Daha Ekle",
+        "created": "Oluşturuldu",
+        "items": "Öğeler",
+        "labels": "Etiketler",
+        "locations": "Konumlar",
+        "name": "İsim",
+        "search": "Ara",
+        "sign_out": "Oturumu kapat",
+        "welcome": "Hoşgeldib, { username }"
     },
     "components": {
         "app": {
@@ -32,7 +40,8 @@
         },
         "item": {
             "create_modal": {
-                "title": "Eşya Oluştur"
+                "title": "Eşya Oluştur",
+                "photo_button": "Fotoğraf 📷"
             },
             "view": {
                 "selectable": {
@@ -65,5 +74,55 @@
         "set_name": "Adın ne?",
         "joining_group": "Mevcut bir gruba katılıyorsunuz!",
         "dont_join_group": "Bir gruba katılmak istemiyor musunuz?"
+    },
+    "items": {
+        "add": "Ekle",
+        "created_at": "Oluşturulma",
+        "custom_fields": "Özel Alanlar",
+        "field_selector": "alan seçici",
+        "field_value": "Alan Değeri",
+        "first": "Birinci",
+        "include_archive": "Arşivlenen Öğeleri Dahil Et",
+        "last": "Son",
+        "negate_labels": "Seçili Etiketleri Yoksay",
+        "next_page": "Sonraki Sayfa",
+        "no_results": "Öğe Bulunamadı",
+        "options": "Seçenekler",
+        "order_by": "Sıralama ölçütü",
+        "pages": "Sayfa { page }/{ totalPages }",
+        "prev_page": "Önceki Sayfa",
+        "query_id": "Varlık Kimlik Numarası Sorgulanıyor: { id }",
+        "tip_1": "Konum ve etiket filtreleri 'veya' işlemini kullanır. Eğer birden fazla seçilirse sadece biri \neşleştirme için kullanılacaktır.",
+        "reset_search": "Aramayı Sıfırla",
+        "tips": "İpuçları",
+        "results": "{ total } Sonuç",
+        "tip_2": "'#' ile başlayan aramalar bir varlık kimliğini sorgular (örneğin '#000-001')",
+        "tip_3": "Alan filtreleri 'VEYA' işlemini kullanır. Birden fazla seçenek seçilirse, eşleşme için yalnızca birinin \nkarşılanması yeterlidir.",
+        "tips_sub": "Arama İpuçları",
+        "updated_at": "Güncellendiği Zaman"
+    },
+    "profile": {
+        "url": "URL",
+        "user_profile": "Kullanıcı Profili",
+        "user_profile_sub": "Kullanıcıları davet edin ve hesabınızı yönetin.",
+        "active": "Aktif",
+        "change_password": "Şifre Değiştir",
+        "currency_format": "Para Birimi Biçimi",
+        "current_password": "Mevcut Şifre",
+        "delete_account": "Hesabı Sil",
+        "delete_account_sub": "Hesabınızı ve ona bağlı tüm verileri silin. Bu işlem geri alınamaz.",
+        "enabled": "Etkinleştirildi",
+        "gen_invite": "Davet Bağlantısı Oluştur",
+        "group_settings": "Grup Ayarları",
+        "group_settings_sub": "Paylaşılan Grup Ayarları. Bazı ayarların uygulanabilmesi için tarayıcınızı yenilemeniz gerekebilir.",
+        "inactive": "Etkin Değil",
+        "new_password": "Yeni Şifre",
+        "notifier_modal": "{ type, select, true {Edit} false {Create} other {Other}} Bildirici",
+        "notifiers": "Bildirimde Bulunanlar",
+        "test": "Test",
+        "theme_settings": "Tema Ayarları",
+        "theme_settings_sub": "Tema ayarları tarayıcınızın yerel depolama alanında saklanır. Temayı istediğiniz zaman değiştirebilirsiniz. \nTemanızı ayarlamakta sorun yaşıyorsanız, tarayıcınızı yenilemeyi deneyin.",
+        "update_group": "Grubu Güncelle",
+        "notifiers_sub": "Yaklaşan bakım hatırlatmaları için bildirimler alın"
     }
 }
